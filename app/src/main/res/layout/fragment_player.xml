@@ -5,7 +5,7 @@
     android:id="@+id/playerFrameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="#A5A9AC"
     tools:context=".ui.fragments.PlayerFragment">
 
     <TextView
@@ -62,7 +62,7 @@
                 android:marqueeRepeatLimit="marquee_forever"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
-                android:textColor="@android:color/white"
+                android:textColor="@color/purple_700"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 tools:text="@tools:sample/lorem/random" />
@@ -80,7 +80,7 @@
                 android:marqueeRepeatLimit="marquee_forever"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
-                android:textColor="@color/grey"
+                android:textColor="@color/purple_700"
                 android:textSize="16sp"
                 tools:text="@tools:sample/full_names" />
         </LinearLayout>
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="25dp"
-                android:textColor="@color/holoWhite" />
+                android:textColor="@color/purple_700" />
 
             <SeekBar
                 android:id="@+id/seekBar"
@@ -126,8 +126,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="60dp">
 
-            <ImageView
-                android:id="@+id/btnShuffle"
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnRepeat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -135,10 +135,11 @@
                 android:layout_toStartOf="@+id/btnPrevious"
                 android:background="@drawable/selector_round"
                 android:padding="15dp"
-                android:src="@drawable/ic_repeat"
-                tools:ignore="ContentDescription" />
+                app:srcCompat="@drawable/ic_repeat"
+                tools:ignore="ContentDescription"
+                tools:tint="@color/purple_700"/>
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/btnPrevious"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -147,20 +148,23 @@
                 android:layout_toStartOf="@+id/fabPlayPause"
                 android:background="@drawable/selector_round"
                 android:padding="15dp"
-                android:src="@drawable/ic_previous"
-                tools:ignore="ContentDescription" />
+                app:srcCompat="@drawable/ic_previous"
+                tools:ignore="ContentDescription"
+                tools:tint="@color/purple_700"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fabPlayPause"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:src="@drawable/ic_play"
+                android:background="?attr/roundSelector"
                 app:backgroundTint="@color/colorAccent"
                 app:elevation="0dp"
-                tools:ignore="ContentDescription,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                app:srcCompat="@drawable/ic_pause_white_64dp"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+                tools:tint="@color/white" />
 
-            <ImageView
+            <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/btnNext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -169,11 +173,12 @@
                 android:layout_toEndOf="@+id/fabPlayPause"
                 android:background="@drawable/selector_round"
                 android:padding="15dp"
-                android:src="@drawable/ic_next"
-                tools:ignore="ContentDescription" />
+                app:srcCompat="@drawable/ic_skip_next"
+                tools:ignore="ContentDescription"
+                tools:tint="@color/purple_700"/>
 
-            <ImageView
-                android:id="@+id/btnPlayList"
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnShuffle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -181,8 +186,9 @@
                 android:layout_toEndOf="@+id/btnNext"
                 android:background="@drawable/selector_round"
                 android:padding="15dp"
-                android:src="@drawable/ic_play_list"
-                tools:ignore="ContentDescription" />
+                app:srcCompat="@drawable/ic_shuffle"
+                tools:ignore="ContentDescription"
+                tools:tint="@color/purple_700"/>
 
         </RelativeLayout>
     </RelativeLayout>

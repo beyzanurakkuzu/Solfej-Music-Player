@@ -65,8 +65,8 @@ class PlayerFragment : Fragment(R.layout.fragment_player) , View.OnClickListener
             fabPlayPause.setOnClickListener(this)
             btnNext.setOnClickListener(this)
             btnPrevious.setOnClickListener(this)
-            btnPlayList.setOnClickListener(this)
             btnShuffle.setOnClickListener(this)
+            btnRepeat.setOnClickListener(this)
 
             setUpPlayPauseButton()
 
@@ -105,10 +105,10 @@ class PlayerFragment : Fragment(R.layout.fragment_player) , View.OnClickListener
             R.id.btnPrevious -> {
                 MusicPlayerRemote.playPreviousSong()
             }
-            R.id.btnShuffle -> {
+            R.id.btnRepeat -> {
                 Toast.makeText(requireContext(), "Coming Soon", Toast.LENGTH_SHORT).show()
             }
-            R.id.btnPlayList -> {
+            R.id.btnShuffle -> {
                 Toast.makeText(requireContext(), "Coming Soon", Toast.LENGTH_SHORT).show()
             }
         }
