@@ -57,7 +57,7 @@
                 android:layout_gravity="center"
                 android:scaleType="center"
                 android:src="@drawable/ic_pause"
-                android:contentDescription="PlayPauseButton" />
+                android:contentDescription="@string/playpausebutton" />
         </FrameLayout>
     </LinearLayout>
 </FrameLayout>

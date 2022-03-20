@@ -45,9 +45,11 @@ const val ACTION_PLAY_PAUSE = "action play pause"
 const val ACTION_NEXT = "action next"
 const val ACTION_MAIN = "action main"
 
+@Suppress("DEPRECATION")
 class PlayerService : Service(), MediaPlayer.OnCompletionListener, MediaPlayer.OnPreparedListener,
     MediaPlayer.OnSeekCompleteListener, MediaPlayer.OnErrorListener,
     AudioManager.OnAudioFocusChangeListener {
+
     companion object {
         private const val MEDIA_SESSION_ACTIONS = (PlaybackStateCompat.ACTION_PLAY
                 or PlaybackStateCompat.ACTION_PAUSE

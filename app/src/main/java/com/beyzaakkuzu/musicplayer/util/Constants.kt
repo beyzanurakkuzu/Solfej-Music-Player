@@ -4,7 +4,7 @@ import android.provider.MediaStore
 
 object Constants {
 
-    private const val packageName = "com.zakariya.mymusicplayer"
+    private const val packageName = "com.beyzaakkuzu.musicplayer"
     const val PREF_NAME = "$packageName.SHARED_PREF"
     const val POSITION_KEY = "${packageName}.position"
     const val CURRENT_SONG_DURATION_KEY = "$packageName.currentSongDurationKey"
