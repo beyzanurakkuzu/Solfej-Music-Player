@@ -194,9 +194,9 @@ class PlayerFragment : Fragment(R.layout.fragment_player) , View.OnClickListener
             playerService!!.mediaPlayer != null &&
             playerService!!.isPlaying()
         ) {
-            fabPlayPause.setImageResource(R.drawable.ic_pause)
+            fabPlayPause.setImageResource(R.drawable.ic_pause_white_64dp)
         } else {
-            fabPlayPause.setImageResource(R.drawable.ic_play)
+            fabPlayPause.setImageResource(R.drawable.ic_play_bigger)
         }
     }
 }
