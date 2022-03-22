@@ -548,7 +548,7 @@ class PlayerService : Service(), MediaPlayer.OnCompletionListener, MediaPlayer.O
                 addAction(playPauseDrawable, "Play", playPausePendingIntent)
                 addAction(R.drawable.ic_skip_next, "Next", nextPendingIntent)
                 setLargeIcon(bitmap)
-                setSmallIcon(R.drawable.ic_song)
+                setSmallIcon(R.drawable.ic_queue_music)
                 setShowWhen(false)
                 // Take advantage of MediaStyle features
                 setStyle(
