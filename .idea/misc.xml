@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable-v24/avd_music_note.xml" value="0.1" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable-v24/ic_previous.xml" value="0.189" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/deneme.xml" value="0.1165" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_audiotrack.xml" value="0.1" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_expand.xml" value="0.1935" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_favorite.xml" value="0.1935" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_home.xml" value="0.1935" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_pause_bigger.xml" value="0.1" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_pause_white_64dp.xml" value="0.189" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_play_bigger.xml" value="0.163" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_queue_music.xml" value="0.1935" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_repeat.xml" value="0.189" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_shuffle.xml" value="0.189" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/ic_skip_next.xml" value="0.189" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/round_selector.xml" value="0.1165" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/round_selector_mask.xml" value="0.1165" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/selector_round.xml" value="0.163" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/drawable/selector_round_mask.xml" value="0.1165" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/activity_splash.xml" value="0.16" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/fragment_album.xml" value="0.1" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/fragment_artist.xml" value="0.1" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/fragment_favourite.xml" value="0.1" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/fragment_mini_player.xml" value="0.33" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/fragment_player.xml" value="0.16" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/fragment_song.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/single_song_item.xml" value="0.25" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/layout/status_bar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Beyzanur AKKUZU/Documents/MusicPlayer/app/src/main/res/menu/bottom_navigation_items.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
