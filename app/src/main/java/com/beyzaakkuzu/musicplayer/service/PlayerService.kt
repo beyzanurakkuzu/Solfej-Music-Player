@@ -45,9 +45,11 @@ const val ACTION_PLAY_PAUSE = "action play pause"
 const val ACTION_NEXT = "action next"
 const val ACTION_MAIN = "action main"
 
+@Suppress("DEPRECATION")
 class PlayerService : Service(), MediaPlayer.OnCompletionListener, MediaPlayer.OnPreparedListener,
     MediaPlayer.OnSeekCompleteListener, MediaPlayer.OnErrorListener,
     AudioManager.OnAudioFocusChangeListener {
+
     companion object {
         private const val MEDIA_SESSION_ACTIONS = (PlaybackStateCompat.ACTION_PLAY
                 or PlaybackStateCompat.ACTION_PAUSE
@@ -544,7 +546,7 @@ class PlayerService : Service(), MediaPlayer.OnCompletionListener, MediaPlayer.O
                 setOngoing(isPlaying())
                 addAction(R.drawable.ic_previous, "Previous", previousPendingIntent)
                 addAction(playPauseDrawable, "Play", playPausePendingIntent)
-                addAction(R.drawable.ic_next, "Next", nextPendingIntent)
+                addAction(R.drawable.ic_skip_next, "Next", nextPendingIntent)
                 setLargeIcon(bitmap)
                 setSmallIcon(R.drawable.ic_song)
                 setShowWhen(false)

@@ -80,6 +80,7 @@ open class MainActivity : AppCompatActivity() {
         }
 
 
+
         //setting up custom status bar height
         statusBar.layoutParams.height = getStatusBarHeight(resources)
 
@@ -115,7 +116,7 @@ open class MainActivity : AppCompatActivity() {
 
         setUpBottomNavigationNavController()
 
-        bottomSheetBehavior = BottomSheetBehavior.from(binding.slidingPanel)
+        bottomSheetBehavior = BottomSheetBehavior.from(slidingPanel)
         bottomSheetBehavior.addBottomSheetCallback(bottomSheetCallback)
 
         miniPlayerFragment?.view?.setOnClickListener {

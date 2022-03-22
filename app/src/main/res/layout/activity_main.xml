@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".ui.activity.MainActivity">
 
     <LinearLayout
@@ -16,6 +17,7 @@
             layout="@layout/status_bar" />
 
         <FrameLayout
+            android:background="#050206"
             android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -27,6 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:defaultNavHost="true"
+
                 app:navGraph="@navigation/nav_graph"
                 tools:ignore="FragmentTagUsage" />
         </FrameLayout>
@@ -36,7 +39,7 @@
         android:id="@+id/dimBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000"
+        android:background="#050206"
         android:clickable="true"
         android:focusable="true"
         android:visibility="gone" />
@@ -54,13 +57,15 @@
             android:id="@+id/playerFragmentContainer"
             android:name="com.beyzaakkuzu.musicplayer.ui.fragments.PlayerFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_player" />
 
         <fragment
             android:id="@+id/miniPlayerFragment"
             android:name="com.beyzaakkuzu.musicplayer.ui.fragments.MiniPlayerFragment"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="70dp"
+            android:elevation="50dp"
             tools:layout="@layout/fragment_mini_player"
             tools:ignore="FragmentTagUsage" />
 
@@ -72,10 +77,10 @@
         android:layout_width="match_parent"
         android:layout_height="58dp"
         android:layout_gravity="bottom"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/black"
         app:elevation="0dp"
         app:itemIconTint="@color/bottom_nav_item_color"
-        app:itemRippleColor="@color/colorAccent"
+        app:itemRippleColor="@color/camel"
         app:itemTextColor="@color/bottom_nav_item_color"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_navigation_items"

@@ -27,10 +27,10 @@ class SongRepository(private val context: Context) {
         val title = cursor.getString(0)
         val id = cursor.getString(1)
         val path = cursor.getString(2)
-        val artistName=cursor.getString(3)
-        val albumName=cursor.getString(4)
-        val duration=cursor.getLong(5)
-        return SongModel(title,id,path,artistName,albumName, duration)
+        val artistName = cursor.getString(3)
+        val albumName = cursor.getString(4)
+        val duration = cursor.getLong(5)
+        return SongModel(id, title, path, artistName, albumName, duration)
     }
     @SuppressLint("Recycle")
     private fun makeSongCursor(): Cursor? {

@@ -28,7 +28,7 @@ class SplashActivity : AppCompatActivity() {
             ActivityCompat.requestPermissions(this, permissions, REQ_CODE)
         } else {
             lifecycleScope.launch(Dispatchers.Main) {
-                delay(100L)
+                delay(3000L)
                 Intent(this@SplashActivity, MainActivity::class.java).also {
                     startActivity(it)
                     this@SplashActivity.finish()

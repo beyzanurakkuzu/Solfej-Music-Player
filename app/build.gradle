@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.beyzaakkuzu.musicplayer"
-        minSdk 29
+        minSdk 27
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -33,9 +33,7 @@ android {
     }
     buildFeatures {
         viewBinding true
-        dataBinding {
-            enabled true
-        }
+
     }
 }
 

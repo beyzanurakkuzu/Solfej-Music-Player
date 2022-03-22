@@ -13,15 +13,17 @@ object MusicPlayerRemote {
     var playerService: PlayerService? = null
     private val mConnectionMap = WeakHashMap<Context, ServiceBinder>()
 
-    fun sendAllSong(songList:MutableList<SongModel>, position:Int){
-        if(playerService!=null){
-            playerService?.getAllSongs(songList,position)
+    fun sendAllSong(songList: MutableList<SongModel>, position: Int) {
+        if (playerService != null) {
+            playerService?.getAllSongs(songList, position)
         }
     }
+
     fun playPause() {
         if (playerService != null)
             playerService?.playPause()
     }
+
     fun playNextSong() {
         if (playerService != null) {
             playerService?.playNext()

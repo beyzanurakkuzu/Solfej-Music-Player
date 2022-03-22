@@ -66,6 +66,8 @@ class SongFragment : Fragment(R.layout.fragment_song) {
         )
         return binding.root
     }
+
+
     private fun createFastScroller(recyclerView: RecyclerView): FastScroller? {
         return FastScrollerBuilder(recyclerView).useMd2Style().build()
     }
