@@ -5,7 +5,7 @@
     android:id="@+id/playerFrameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#050206"
+    android:background="@color/krem"
     tools:context=".ui.fragments.PlayerFragment">
 
     <TextView
@@ -55,14 +55,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="15dp"
                 android:ellipsize="marquee"
                 android:freezesText="true"
                 android:marqueeRepeatLimit="marquee_forever"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
-                android:textColor="@color/camel"
+                android:textColor="@color/blackChocolate"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 tools:text="@tools:sample/lorem/random" />
@@ -71,17 +71,17 @@
                 android:id="@+id/txtArtistName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="15dp"
                 android:ellipsize="marquee"
+                android:layout_gravity="center_horizontal"
                 android:freezesText="true"
                 android:marqueeRepeatLimit="marquee_forever"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
-                android:textColor="@color/coffee"
-                android:textSize="16sp"
+                android:textColor="@color/green"
+                android:textSize="18sp"
                 tools:text="@tools:sample/full_names" />
         </LinearLayout>
         <!-- seek bar and duration -->
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="25dp"
-                android:textColor="@color/camel" />
+                android:textColor="@color/blackChocolate" />
 
             <SeekBar
                 android:id="@+id/seekBar"
@@ -105,9 +105,9 @@
                 android:layout_height="wrap_content"
                 android:layout_toStartOf="@+id/txtEndDuration"
                 android:layout_toEndOf="@+id/txtStartDuration"
-                android:progressBackgroundTint="@color/cafenoir"
-                android:progressTint="@color/camel"
-                android:thumbTint="@color/camel" />
+                android:progressBackgroundTint="@color/blackChocolate"
+                android:progressTint="@color/green"
+                android:thumbTint="@color/green" />
 
             <TextView
                 android:id="@+id/txtEndDuration"
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="25dp"
-                android:textColor="@color/camel" />
+                android:textColor="@color/blackChocolate" />
 
         </RelativeLayout>
 
@@ -124,7 +124,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="60dp">
+            android:layout_marginBottom="70dp">
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/btnRepeat"
@@ -137,7 +137,7 @@
                 android:padding="15dp"
                 app:srcCompat="@drawable/ic_repeat"
                 tools:ignore="ContentDescription"
-                tools:tint="@color/camel" />
+                tools:tint="@color/blackChocolate" />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/btnPrevious"
@@ -150,7 +150,7 @@
                 android:padding="15dp"
                 app:srcCompat="@drawable/ic_previous"
                 tools:ignore="ContentDescription"
-                tools:tint="@color/camel"/>
+                tools:tint="@color/blackChocolate" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fabPlayPause"
@@ -158,11 +158,11 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:background="?attr/roundSelector"
-                app:backgroundTint="@color/coffee"
+                app:backgroundTint="@color/green"
                 app:elevation="0dp"
                 app:srcCompat="@drawable/ic_pause_white_64dp"
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
-                tools:tint="@color/white" />
+              />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/btnNext"
@@ -174,8 +174,8 @@
                 android:background="@drawable/selector_round"
                 android:padding="15dp"
                 app:srcCompat="@drawable/ic_skip_next"
-                tools:ignore="ContentDescription"
-                tools:tint="@color/camel"/>
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck"
+                tools:tint="@color/blackChocolate" />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/btnShuffle"
@@ -188,7 +188,7 @@
                 android:padding="15dp"
                 app:srcCompat="@drawable/ic_shuffle"
                 tools:ignore="ContentDescription"
-                tools:tint="@color/camel"/>
+                tools:tint="@color/blackChocolate" />
 
         </RelativeLayout>
     </RelativeLayout>

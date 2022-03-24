@@ -5,7 +5,7 @@
     android:id="@+id/miniPlayerContent"
     android:layout_width="match_parent"
     android:layout_height="56dp"
-    android:background="@drawable/deneme"
+    android:background="@color/whitebrown"
     android:clickable="true"
     android:focusable="true"
     tools:ignore="UnusedAttribute">

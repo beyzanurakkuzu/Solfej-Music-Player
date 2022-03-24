@@ -7,7 +7,7 @@
     app:startDestination="@id/albumFragment">
     <fragment
         android:id="@+id/albumFragment"
-        android:name="com.beyzaakkuzu.musicplayer.ui.fragments.AlbumFragment"
+        android:name="com.beyzaakkuzu.musicplayer.ui.fragments.Album_Home.AlbumFragment"
         android:label="AlbumFragment" >
         <action
             android:id="@+id/action_albumFragment_to_songFragment2"

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         app:cardCornerRadius="10dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/krem"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +20,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/coffee"
+            android:backgroundTint="@color/brown"
             android:padding="10dp">
 
             <ImageView
@@ -43,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_weight="1"
-                android:textColor="@color/camel"
-                android:textSize="14sp"
+                android:textColor="@color/cafenoir"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imgThumbnail"
@@ -59,8 +59,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="2dp"
                 android:layout_weight="1"
-                android:textColor="@color/camel"
+                android:textColor="@color/green"
                 android:textSize="12sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imgThumbnail"
                 app:layout_constraintTop_toBottomOf="@+id/txtSongName"
