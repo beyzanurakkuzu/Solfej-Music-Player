@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/songFragment">
-
+    app:startDestination="@id/albumFragment">
+    <fragment
+        android:id="@+id/albumFragment"
+        android:name="com.beyzaakkuzu.musicplayer.ui.fragments.AlbumFragment"
+        android:label="AlbumFragment" >
+        <action
+            android:id="@+id/action_albumFragment_to_songFragment2"
+            app:destination="@id/songFragment" />
+    </fragment>
     <fragment
         android:id="@+id/songFragment"
         android:name="com.beyzaakkuzu.musicplayer.ui.fragments.SongFragment"
         android:label="fragment_song"
-        tools:layout="@layout/fragment_song" />
-    <fragment
-        android:id="@+id/albumFragment"
-        android:name="com.beyzaakkuzu.musicplayer.ui.fragments.AlbumFragment"
-        android:label="AlbumFragment" />
-    <fragment
-        android:id="@+id/artistFragment"
-        android:name="com.beyzaakkuzu.musicplayer.ui.fragments.ArtistFragment"
-        android:label="ArtistFragment" />
+        tools:layout="@layout/fragment_song" >
+        <action
+            android:id="@+id/action_songFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_songFragment_to_albumFragment2"
+            app:destination="@id/albumFragment" />
+    </fragment>
     <fragment
         android:id="@+id/favouriteFragment"
         android:name="com.beyzaakkuzu.musicplayer.ui.fragments.FavouriteFragment"
-        android:label="FavouriteFragment" />
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_songFragment2"
+            app:destination="@id/songFragment" />
+        <action
+            android:id="@+id/action_favouriteFragment_to_albumFragment"
+            app:destination="@id/albumFragment" />
+    </fragment>
 </navigation>
